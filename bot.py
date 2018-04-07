@@ -45,7 +45,6 @@ class CoinMarketBot:
 
     @bot.event
     async def on_message(message):
-        if not message.author.bot:
             if message.content.startswith("<@" + str(bot.user.id) + ">"):
                 try:
                     if message.server.id in prefix_list:
